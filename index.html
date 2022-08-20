@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -39,19 +39,109 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="hero">
-      <h2>VERÓNICA RODRIGUES</h2>
-      <h1>Front end developer</h1>
-      <h3>Based in Stockholm</h3>
-      <p>
-        Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
-        Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
-        Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
-        Texto Texto Texto
-      </p>
-      <a href="#" class="btn btn-branding contact-button">CONTACT ME</a>
-      <a href="#" class="btn btn-branding about-button">ABOUT ME</a>
-      <a href="#" class="btn btn-branding work-button">WORK</a>
+    <div class="container-full my-5 mx-5">
+      <section class="intro rounded">
+        <div class="row">
+          <div class="col col-lg-7 d-flex intro-col">
+            <div class="hero">
+              <h2>verónica rodrigues</h2>
+              <h1>Front end developer</h1>
+              <h3>Based in Stockholm</h3>
+              <p>
+                Hola buenas estamos probando el texto de la página. Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto
+              </p>
+              <div class="hero-buttons">
+                <a href="#" class="btn btn-branding contact-button"
+                  >contact me</a
+                >
+                <a href="#" class="btn btn-branding about-button">about me</a>
+                <a href="#" class="btn btn-branding work-button">work</a>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-lg-block col-lg-5 d-flex text-center">
+            <img
+              src="images/home-image.png"
+              class="d-none d-lg-block rounded home-img"
+              alt="home-image"
+            />
+          </div>
+        </div>
+      </section>
+      <main class="container recent-projects p-5">
+        <h2 class="mb-3 recent-projects-title">Recent projects</h2>
+        <div class="rows">
+          <div class="row d-flex rounded p-4 mb-5">
+            <div class="d-none d-md-block col-md-6 d-flex">
+              <img
+                src="images/yogurt-image.png"
+                class="d-none d-md-block img-fluid rounded yogurt-img"
+                alt="yogurt-image"
+              />
+            </div>
+            <div class="col project-description">
+              <h2>Yogurt Project</h2>
+              <p>
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+              </p>
+              <a
+                href="#"
+                class="btn btn-branding contact-button shadow text-uppercase"
+                >Launch App</a
+              >
+            </div>
+          </div>
+          <div class="row d-flex rounded p-4 mb-5">
+            <div class="col project-description">
+              <h2>Weather App</h2>
+              <p>
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+              </p>
+              <a href="#" class="btn btn-branding contact-button text-uppercase"
+                >Launch App</a
+              >
+            </div>
+            <div class="d-none d-md-block col-md-6 d-flex">
+              <img
+                src="images/weather-image.png"
+                class="d-none d-md-block img-fluid rounded weather-img"
+                alt="weather-image"
+              />
+            </div>
+          </div>
+          <div class="row d-flex rounded p-4">
+            <div class="d-none d-md-block col-md-6 d-flex">
+              <img
+                src="images/dictionary-image.png"
+                class="d-none d-md-block img-fluid rounded dictionary-img"
+                alt="dictionary-image"
+              />
+            </div>
+            <div class="col project-description">
+              <h2>Dictionary App</h2>
+              <p>
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+              </p>
+              <a href="#" class="btn btn-branding contact-button text-uppercase"
+                >Launch App</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
