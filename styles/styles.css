@@ -237,6 +237,7 @@ img {
 .about-section {
   padding: 48px;
   box-sizing: border-box;
+  margin-bottom: 55px;
 }
 
 .presentation-img {
@@ -351,4 +352,17 @@ img {
   .hero-about p {
     text-align: center;
   }
+}
+
+.work-section h1 {
+  font-size: 50px;
+  color: var(--primary-branding-color);
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.div-work .col-4 {
+  flex-direction: column;
+  align-items: center;
 }
