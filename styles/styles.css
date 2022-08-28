@@ -22,9 +22,9 @@ section.intro {
 }
 
 .hero {
-  box-sizing: border-box;
-  width: 100%;
   padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero h2 {
@@ -50,7 +50,6 @@ section.intro {
 }
 
 .hero-buttons {
-  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
@@ -81,11 +80,11 @@ section.intro {
   border-color: var(--primary-branding-color);
 }
 
-.contact-button {
+.primary-button-style {
   background: var(--primary-branding-color);
 }
 
-.contact-button:hover {
+.primary-button-style:hover {
   border-color: var(--primary-branding-color);
 }
 
@@ -109,24 +108,22 @@ section.intro {
   width: 70%;
 }
 
-h2 {
-  font-size: 50px;
-}
-
 main.recent-projects {
-  box-sizing: border-box;
   margin-top: 32px;
+  box-sizing: border-box;
 }
 
-h2.recent-projects {
+h2.title {
+  font-size: 50px;
   font-weight: 400px;
 }
-
+.rows h2 {
+  font-size: 40px;
+}
 .recent-projects .row {
-  align-items: center;
   background-color: rgb(252, 252, 252);
-  margin: 0 auto;
-  padding: 48px;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-description {
@@ -136,22 +133,28 @@ h2.recent-projects {
   justify-content: space-between;
 }
 
+.project-description h2 {
+  margin-bottom: 40px;
+}
+
+.project-description p {
+  margin-top: -20px;
+  line-height: 25px;
+}
+
+.project-description a {
+  margin-top: 30px;
+}
+
 .img-fluid {
-  display: block;
   margin: auto;
   max-width: 80%;
-  height: auto;
-  justify-content: center;
 }
 
 img {
   display: block;
   margin: 0 auto;
   box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
-}
-
-.recent-projects p {
-  line-height: 25px;
 }
 
 @media (max-width: 1199px) {
@@ -190,7 +193,7 @@ img {
 }
 
 @media (max-width: 767px) {
-  .recent-projects-title {
+  h2.title {
     font-size: 42px;
     text-align: center;
   }
@@ -234,10 +237,10 @@ img {
   }
 }
 
-.about-section {
+section.about {
   padding: 48px;
-  box-sizing: border-box;
   margin-bottom: 55px;
+  box-sizing: border-box;
 }
 
 .presentation-img {
@@ -271,14 +274,6 @@ img {
 .hero-about p {
   font-size: 16px;
   margin-bottom: 50px;
-}
-
-.projects-button {
-  background: var(--primary-branding-color);
-}
-
-.projects-button:hover {
-  border-color: var(--primary-branding-color);
 }
 
 @media (max-width: 1030px) {
@@ -362,7 +357,23 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
-.div-work .col-4 {
+
+div.work .col-4 {
   flex-direction: column;
   align-items: center;
+}
+
+div.work img {
+  margin-bottom: 35px;
+}
+
+div.work h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div.work p {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 15px;
 }
