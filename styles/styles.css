@@ -133,7 +133,7 @@ h2.title {
   justify-content: space-between;
 }
 
-.project-description h2 {
+.rows h2 {
   margin-bottom: 40px;
 }
 
@@ -161,13 +161,16 @@ img {
   .project-description {
     padding: 20px 50px;
   }
-  .project-description h2 {
-    font-size: 40px;
+}
+
+@media (max-width: 1048px) {
+  .hero h1 {
+    font-size: 58px;
   }
 }
 
 @media (max-width: 1030px) {
-  .intro h1 {
+  .hero h1 {
     font-size: 56px;
   }
 }
@@ -190,6 +193,9 @@ img {
     display: block;
     margin: 0 auto;
   }
+  h2.title {
+    font-size: 55px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -197,23 +203,18 @@ img {
     font-size: 42px;
     text-align: center;
   }
-  .project-description {
-    padding: 0px;
-  }
 }
 
 @media (max-width: 700px) {
   .hero-buttons {
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     height: 200px;
     align-items: center;
   }
 }
 
 @media (max-width: 646px) {
-  .intro h1 {
+  .hero h1 {
     font-size: 50px;
   }
   .intro h2 {
@@ -222,18 +223,8 @@ img {
 }
 
 @media (max-width: 598px) {
-  .intro h1 {
+  .hero h1 {
     font-size: 45px;
-    text-align: center;
-  }
-  .intro h2 {
-    text-align: center;
-  }
-  .intro h3 {
-    text-align: center;
-  }
-  .intro p {
-    text-align: center;
   }
 }
 
@@ -301,6 +292,9 @@ section.about {
 }
 
 @media (max-width: 832px) {
+  section.about {
+    margin-bottom: 45px;
+  }
   .hero-about h1 {
     font-size: 40px;
   }
@@ -308,19 +302,23 @@ section.about {
     margin-bottom: 30px;
   }
   .presentation-img {
-    width: 80%;
+    width: 75%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .presentation-img {
-    width: 50%;
+    width: 45%;
   }
   .div-presentation-img {
     margin-bottom: 30px;
   }
   .intro-col {
     text-align: center;
+  }
+  .work .btn {
+    width: 70%;
+    font-size: 12px;
   }
 }
 
@@ -338,18 +336,9 @@ section.about {
     font-size: 45px;
     text-align: center;
   }
-  .hero-about h3 {
-    text-align: center;
-  }
-  .hero-about h2 {
-    text-align: center;
-  }
-  .hero-about p {
-    text-align: center;
-  }
 }
 
-.work-section h1 {
+.work h1 {
   font-size: 50px;
   color: var(--primary-branding-color);
   font-weight: bold;
@@ -376,4 +365,10 @@ div.work p {
   width: 70%;
   text-align: center;
   margin-bottom: 15px;
+}
+
+@media (max-width: 832px) {
+  .work h1 {
+    margin-bottom: 40px;
+  }
 }
