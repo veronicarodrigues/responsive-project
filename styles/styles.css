@@ -372,3 +372,24 @@ div.work p {
     margin-bottom: 40px;
   }
 }
+
+section.contact {
+  text-align: center;
+}
+
+.contact-header,
+p.location,
+p.email a,
+p.phone {
+  color: var(--primary-branding-color);
+}
+
+.contact-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+p.email a:hover {
+  text-decoration: none;
+}
