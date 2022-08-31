@@ -380,7 +380,7 @@ section.contact {
 .contact-header,
 p.location,
 p.email a,
-p.phone {
+p.instagram a {
   color: var(--primary-branding-color);
 }
 
@@ -390,6 +390,7 @@ p.phone {
   margin-bottom: 80px;
 }
 
-p.email a:hover {
+p.email a:hover,
+p.instagram a:hover {
   text-decoration: none;
 }
