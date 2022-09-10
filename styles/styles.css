@@ -15,6 +15,42 @@ body {
   font-family: var(--primary-font-family);
 }
 
+nav {
+  padding: 20px 0px;
+  align-items: flex-start;
+}
+
+.logo {
+  max-width: 40px;
+}
+
+img.logo {
+  margin-left: 0px;
+  box-shadow: none;
+}
+
+nav ul {
+  padding: 0px;
+  padding-top: 10px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 15px;
+}
+
+nav a {
+  color: var(--primary-text-color);
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--primary-branding-color);
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
 section.intro {
   background-color: var(--secondary-background-color);
   padding: 48px;
