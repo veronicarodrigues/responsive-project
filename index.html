@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Verónica is a front-end engineer based in Stockholm"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,17 +39,21 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Homepage</title>
+    <title>Front-end developer - Verónica Rodrigues</title>
   </head>
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between align-middle">
-        <img src="images/logo-image.png" class="logo" alt="" />
+        <a href="/index.html" title="Homepage">
+          <img src="images/logo-image.png" class="logo" alt="Verónica's Logo" />
+        </a>
         <ul>
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="/about-work.html">About</a></li>
-          <li><a href="/about-work.html#work">Work</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/" class="active" title="Homepage">Home</a></li>
+          <li><a href="/about-work.html" title="About Verónica">About</a></li>
+          <li>
+            <a href="/about-work.html#work" title="Verónica's work">Work</a>
+          </li>
+          <li><a href="/contact.html" title="Contact Verónica">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -66,11 +73,24 @@
                 Texto Texto Texto Texto Texto Texto Texto Texto
               </p>
               <div class="hero-buttons d-flex">
-                <a href="/contact.html" class="btn primary-button-style"
+                <a
+                  href="/contact.html"
+                  class="btn primary-button-style"
+                  title="Contact Verónica"
                   >contact me</a
                 >
-                <a href="/about-work.html" class="btn about-button">about me</a>
-                <a href="/about-work.html#work" class="btn work-button">work</a>
+                <a
+                  href="/about-work.html"
+                  class="btn about-button"
+                  title="About Verónica"
+                  >about me</a
+                >
+                <a
+                  href="/about-work.html#work"
+                  class="btn work-button"
+                  title="Verónica's work"
+                  >work</a
+                >
               </div>
             </div>
           </div>
@@ -78,7 +98,7 @@
             <img
               src="images/home-image.png"
               class="d-none d-lg-block rounded home-img"
-              alt="home-image"
+              alt="Home page image"
             />
           </div>
         </div>
@@ -90,19 +110,24 @@
             <div class="d-none d-md-block col-md-6">
               <img
                 src="images/yogurt-image.png"
-                class="d-none d-md-block img-fluid rounded yogurt-img"
-                alt="yogurt-image"
+                class="d-none d-md-block img-fluid rounded pottery-img"
+                alt="pottery project preview"
               />
             </div>
             <div class="col project-description d-flex">
-              <h2>Yogurt Project</h2>
+              <h2>Pottery Project</h2>
               <p>
                 Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
                 Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
                 Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
                 Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
               </p>
-              <a href="#" class="btn primary-button-style">Launch App</a>
+              <a
+                href="#"
+                class="btn primary-button-style"
+                title="Launch Pottery project"
+                >Launch App</a
+              >
             </div>
           </div>
           <div class="row d-flex rounded p-4 mb-5">
@@ -114,13 +139,19 @@
                 Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
                 Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
               </p>
-              <a href="#" class="btn primary-button-style">Launch App</a>
+              <a
+                href="https://starlit-clafoutis-f310c6.netlify.app"
+                target="_blank"
+                class="btn primary-button-style"
+                title="Launch Weather project"
+                >Launch App</a
+              >
             </div>
             <div class="d-none d-md-block col-md-6">
               <img
                 src="images/weather-image.png"
                 class="d-none d-md-block img-fluid rounded weather-img"
-                alt="weather-image"
+                alt="weather project preview"
               />
             </div>
           </div>
@@ -129,7 +160,7 @@
               <img
                 src="images/dictionary-image.png"
                 class="d-none d-md-block img-fluid rounded dictionary-img"
-                alt="dictionary-image"
+                alt="dictionary project preview"
               />
             </div>
             <div class="col project-description d-flex">
@@ -140,7 +171,12 @@
                 Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
                 Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
               </p>
-              <a href="#" class="btn primary-button-style">Launch App</a>
+              <a
+                href="#"
+                class="btn primary-button-style"
+                title="Launch Dictionary project"
+                >Launch App</a
+              >
             </div>
           </div>
         </div>
@@ -152,26 +188,39 @@
             <p class="text-muted">Let's work together</p>
           </div>
           <div>
-            <a href="/contact.html" class="btn primary-button-style"
+            <a
+              href="/contact.html"
+              class="btn primary-button-style"
+              title="Contact Verónica"
               >Contact me</a
             >
           </div>
         </div>
         <div class="d-flex justify-content-center mb-4">
-          <a href="mailto:ra.veronica14@gmail.com" class="email-link"
+          <a
+            href="mailto:ra.veronica14@gmail.com"
+            class="email-link"
+            title="Send email"
             >ra.veronica14@gmail.com</a
           >
         </div>
         <div class="social-links d-flex justify-content-center">
-          <a href="https://github.com/veronicarodrigues" target="_blank"
+          <a
+            href="https://github.com/veronicarodrigues"
+            target="_blank"
+            title="GitHub profile"
             ><i class="fab fa-github"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/ver%C3%B3nica-rodrigues-ardanaz/"
             target="_blank"
+            title="Linkedin profile"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="https://www.instagram.com/verorodrigues__/" target="_blank"
+          <a
+            href="https://www.instagram.com/verorodrigues__/"
+            target="_blank"
+            title="Instagram profile"
             ><i class="fab fa-instagram"></i
           ></a>
         </div>

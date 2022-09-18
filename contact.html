@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Verónica is a front-end engineer based in Stockholm"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,12 +44,20 @@
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between align-middle">
-        <img src="images/logo-image.png" class="logo" alt="" />
+        <a href="/index.html" title="Homepage">
+          <img src="images/logo-image.png" class="logo" alt="Verónica Logo" />
+        </a>
         <ul>
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="/about-work.html">About</a></li>
-          <li><a href="/about-work.html#work">Work</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/" title="Homepage">Home</a></li>
+          <li><a href="/about-work.html" title="About Verónica">About</a></li>
+          <li>
+            <a href="/about-work.html#work" title="Verónica's work">Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" class="active" title="Contact Verónica"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </div>
@@ -57,13 +68,16 @@
         <p class="location">Stockholm, Sweden</p>
         <h3 class="email">Email</h3>
         <p class="email">
-          <a href="mailto:ra.veronica14@gmail.com">ra.veronica14@gmail.com</a>
+          <a href="mailto:ra.veronica14@gmail.com" title="Send email"
+            >ra.veronica14@gmail.com</a
+          >
         </p>
         <h3 class="linkedin">Linkedin</h3>
         <p class="linkedin">
           <a
             href="https://www.linkedin.com/in/ver%C3%B3nica-rodrigues-ardanaz/"
             target="_blank"
+            title="Linkedin Profile"
             >Verónica Rodrigues Ardanaz</a
           >
         </p>
