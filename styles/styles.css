@@ -477,3 +477,7 @@ footer .social-links a:hover {
   color: white;
   background: var(--primary-branding-color);
 }
+
+footer a.open-sourced {
+  color: var(--primary-branding-color);
+}
