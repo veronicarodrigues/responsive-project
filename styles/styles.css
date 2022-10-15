@@ -322,9 +322,6 @@ section.about {
   .hero-about p {
     margin-bottom: 35px;
   }
-  .presentation-img {
-    width: 75%;
-  }
 }
 
 @media (max-width: 832px) {
@@ -337,18 +334,9 @@ section.about {
   .hero-about p {
     margin-bottom: 30px;
   }
-  .presentation-img {
-    width: 75%;
-  }
 }
 
 @media (max-width: 768px) {
-  .presentation-img {
-    width: 45%;
-  }
-  .div-presentation-img {
-    margin-bottom: 30px;
-  }
   .intro-col {
     text-align: center;
   }
@@ -409,6 +397,19 @@ div.work p {
 @media (max-width: 832px) {
   .work h1 {
     margin-bottom: 40px;
+    color: green;
+  }
+}
+
+@media (max-width: 700px) {
+  section.work div.row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  section.work div.row .col-4 {
+    width: auto;
   }
 }
 
@@ -480,4 +481,16 @@ footer .social-links a:hover {
 
 footer a.open-sourced {
   color: var(--primary-branding-color);
+}
+
+@media (max-width: 790px) {
+  div.contact-box {
+    flex-direction: column;
+  }
+  div.contact-box .btn {
+    margin-top: 30px;
+  }
+  div.contact-box div {
+    text-align: center;
+  }
 }
