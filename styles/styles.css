@@ -340,10 +340,12 @@ section.about {
   .intro-col {
     text-align: center;
   }
+  div.work .col-md-4 {
+    margin-bottom: 50px;
+  }
   .work a {
-    width: 70%;
+    width: auto;
     font-size: 12px;
-    background-color: red;
   }
 }
 
@@ -380,7 +382,7 @@ section.work .container .row {
   flex-direction: row;
 }
 
-div.work .col {
+div.work .col-md-4 {
   flex-direction: column;
   align-items: center;
 }
@@ -403,7 +405,6 @@ div.work p {
 @media (max-width: 832px) {
   .work h1 {
     margin-bottom: 20px;
-    color: yellow;
   }
 }
 
