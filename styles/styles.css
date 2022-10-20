@@ -340,9 +340,10 @@ section.about {
   .intro-col {
     text-align: center;
   }
-  .work .btn {
+  .work a {
     width: 70%;
     font-size: 12px;
+    background-color: red;
   }
 }
 
@@ -374,7 +375,12 @@ section.about {
 section.work {
   padding-bottom: 48px;
 }
-div.work .col-4 {
+
+section.work .container .row {
+  flex-direction: row;
+}
+
+div.work .col {
   flex-direction: column;
   align-items: center;
 }
@@ -396,20 +402,14 @@ div.work p {
 
 @media (max-width: 832px) {
   .work h1 {
-    margin-bottom: 40px;
-    color: green;
+    margin-bottom: 20px;
+    color: yellow;
   }
 }
 
 @media (max-width: 700px) {
-  section.work div.row {
+  section.work .container .row {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 700px) {
-  section.work div.row .col-4 {
-    width: auto;
   }
 }
 
