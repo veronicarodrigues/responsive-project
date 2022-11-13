@@ -217,7 +217,7 @@ img {
   }
   .project-description {
     text-align: center;
-    padding: 50px 0px;
+    padding: 20px 0px;
   }
   .project-description h2 {
     font-size: 35px;
@@ -256,11 +256,22 @@ img {
   .intro h2 {
     font-size: 20px;
   }
+  section.intro {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 598px) {
+  .hero {
+    padding: 0px;
+  }
   .hero h1 {
-    font-size: 45px;
+    font-size: 38px;
+    line-height: 40px;
+    padding: 10px 0px;
+  }
+  main.recent-projects {
+    padding: 0px;
   }
 }
 
