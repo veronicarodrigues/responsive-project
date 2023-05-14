@@ -169,6 +169,12 @@ h2.title {
   justify-content: space-between;
 }
 
+.project-description .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .rows h2 {
   margin-bottom: 40px;
 }
