@@ -169,6 +169,10 @@ h2.title {
   justify-content: space-between;
 }
 
+.project-tools {
+  color: var(--primary-branding-color);
+}
+
 .project-description .buttons {
   display: flex;
   flex-direction: row;
@@ -197,6 +201,7 @@ img {
   display: block;
   margin: 0 auto;
   box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+  background-color: rgba(255, 0, 0, 0);
 }
 
 @media (max-width: 1199px) {
@@ -397,6 +402,7 @@ section.work {
 
 section.work .container .row {
   flex-direction: row;
+  align-items: stretch;
 }
 
 div.work .col-md-4 {
@@ -406,6 +412,7 @@ div.work .col-md-4 {
 
 div.work img {
   margin-bottom: 35px;
+  margin-top: 0px;
 }
 
 div.work h3 {
