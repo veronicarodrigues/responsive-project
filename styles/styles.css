@@ -53,7 +53,7 @@ nav a.active {
 
 section.intro {
   background-color: var(--secondary-background-color);
-  padding: 48px;
+  padding: 35px;
   box-sizing: border-box;
 }
 
@@ -77,12 +77,12 @@ section.intro {
 
 .hero h3 {
   font-size: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .hero p {
   font-size: 16px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .hero-buttons {
@@ -144,7 +144,7 @@ section.intro {
   width: 70%;
 }
 
-main.recent-projects {
+main.projects {
   margin-top: 32px;
   box-sizing: border-box;
 }
@@ -156,7 +156,7 @@ h2.title {
 .rows h2 {
   font-size: 40px;
 }
-.recent-projects .row {
+.projects .row {
   background-color: rgb(252, 252, 252);
   align-items: center;
   justify-content: center;
@@ -281,9 +281,27 @@ img {
     line-height: 40px;
     padding: 10px 0px;
   }
-  main.recent-projects {
+  main.projects {
     padding: 0px;
   }
+}
+
+.skills-list {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.skill {
+  background-color: var(--light-primary-branding-color);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
 }
 
 section.about {
