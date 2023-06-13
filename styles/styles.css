@@ -291,6 +291,10 @@ img {
   justify-content: space-around;
 }
 
+.skills-block {
+  flex-direction: column;
+}
+
 .skill {
   background-color: var(--light-primary-branding-color);
   border: none;
