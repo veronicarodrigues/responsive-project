@@ -153,13 +153,21 @@ h2.title {
   font-size: 50px;
   font-weight: 400px;
 }
-.rows h2 {
+.projects .rows h2 {
   font-size: 40px;
 }
 .projects .row {
   background-color: rgb(252, 252, 252);
   align-items: center;
   justify-content: center;
+}
+
+.projects .row img {
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 25px;
+  margin-top: 0px;
 }
 
 .project-description {
@@ -431,19 +439,71 @@ section.work {
   padding-bottom: 48px;
 }
 
-section.work .container .row {
-  flex-direction: row;
-  align-items: stretch;
+section.work .container {
+  position: relative;
+  padding: 0px 30px;
 }
 
-div.work .col-md-4 {
+.left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  box-shadow: none;
+  transform: scaleX(-1);
+}
+
+.row-work {
+  width: 90%;
+  height: auto;
+  margin: 50px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 23%;
+  gap: 90px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  scroll-behavior: smooth;
+  justify-content: space-between;
+}
+
+.row-work::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
   flex-direction: column;
   align-items: center;
+  width: 120px;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
-div.work img {
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   margin-bottom: 35px;
   margin-top: 0px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+div.card-buttons {
+  text-align: center;
 }
 
 div.work h3 {
@@ -452,7 +512,6 @@ div.work h3 {
 }
 
 div.work p {
-  width: 70%;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -464,7 +523,7 @@ div.work p {
 }
 
 @media (max-width: 700px) {
-  section.work .container .row {
+  .row-work {
     flex-direction: column;
   }
 }

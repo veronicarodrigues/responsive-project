@@ -82,86 +82,61 @@
       <section class="work rounded" id="work">
         <h1>work</h1>
         <div class="container">
-        <div class="row work d-block d-flex">
-          <div class="col-md-4 d-block d-flex rounded">
-            <img
-              src="images/pottery-image.png"
-              class="d-none d-md-block img-fluid rounded"
-              alt="pottery project preview"
-            />
-            <h3>Pottery App</h3>
-            <p>
-              Vegan Store - Responsive Landing Page. With several different sections to highlight the differentiation points and the competitive advantages of your business. The landing page came with responsive view and looking very nice even on the small screen. I built this project as a part of the
-                <a
-                  href="https://www.shecodes.io/workshop#tour"
-                  target="_blank"
-                  class="project-tools"
-                  title="SheCodes Basics workshop"
-                  >Introduction to Coding</a
-                >
-                module from
-                <a
-                  href="https://www.shecodes.io"
-                  target="_blank"
-                  class="project-tools"
-                  title="SheCodes"
-                  >SheCodes</a
-                >
-                workshops. I used <b>HTML</b>, <b>CSS</b> and
-                <b>JavaScript</b> for it.
-            </p>
-            <a
-              href="https://main--resilient-parfait-f79715.netlify.app/"
+          <img class="left" id="left" onclick="leftScroll()" width="64" height="64" src="https://img.icons8.com/sf-black-filled/64/8773F0/circled-left-2.png" alt="circled-left-2"/>
+        <div class="row-work work" id="row-work">
+          <div class="card" style="width: 18rem;" >
+            <img src="images/pottery-image.png" class="card-img-top mb-0"  alt="pottery project preview">
+            <div class="card-body">
+              <h3 class="card-title mt-3">Pottery App</h3>
+              <p class="card-text">....................</p>
+                <div class="card-buttons">
+                  <a href="https://main--resilient-parfait-f79715.netlify.app/" target="_blank" class="btn primary-button-style mb-3" title="Launch Pottery project">Launch App</a>
+                  <a href="https://github.com/veronicarodrigues/pottery-project" target="_blank" class="btn primary-button-style" title="Launch Pottery project">GitHub</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem;">
+            <img src="images/weather-image.png" class="card-img-top mb-0"  alt="weather project preview">
+            <div class="card-body">
+              <h3 class="card-title mt-3">Weather App</h3>
+              <p class="card-text">....................</p>
+                <div class="card-buttons">
+                  <a href="#" class="btn primary-button-style mb-3" title="Launch Dictionary project" >Launch App</a>
+                  <a href="#" target="_blank" class="btn primary-button-style" title="Launch Pottery project">GitHub</a></div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="images/nselection-image.png" class="card-img-top mb-0"  alt="nselection project preview">
+            <div class="card-body">
+              <h3 class="card-title mt-3">Real Estate Website</h3>
+              <p class="card-text">....................</p>
+              <div class="card-buttons">
+              <a
+              href="https://starlit-clafoutis-f310c6.netlify.app"
               target="_blank"
               class="btn primary-button-style mb-3"
-              title="Launch Pottery project"
+              title="Launch NSelection project"
               >Launch App</a
             >
-             <a
-              href="https://github.com/veronicarodrigues/pottery-project"
+            <a
+              href="https://github.com/veronicarodrigues/weather-app-light-dark"
               target="_blank"
               class="btn primary-button-style"
-              title="Launch Pottery project"
+              title="Launch NSelection project"
               >GitHub</a
-            >
+            ></div>
+            </div>
           </div>
-          <div class="col-md-4 d-block d-flex rounded">
-            <img
-              src="images/weather-image.png"
-              class="d-none d-md-block img-fluid rounded"
-              alt="weather project preview"
-            />
-            <h3>Weather App</h3>
-            <p>
-             Weather App with realtime data for more than 200.000 cities in the world. Users are also able to obtain weather data for their current location, as well as choose to view the weather temperature in either °C or °F. Provide Geo Location data with responsive view that makes it looking good even on the small screen. Also are able to choose between light or dark styling. I completed this project during the
-                <a
-                  href="https://www.shecodes.io/plus#tour"
-                  target="_blank"
-                  class="project-tools"
-                  title="SheCodes Basics workshop"
-                  >Front End development</a
-                >
-                module from
-                <a
-                  href="https://www.shecodes.io"
-                  target="_blank"
-                  class="project-tools"
-                  title="SheCodes"
-                  >SheCodes</a
-                >
-                workshops. I used <b>HTML</b>, <b>CSS</b> and
-                <b>JavaScript</b> for it. It connects to
-                <a
-                  href="https://openweathermap.org/api"
-                  target="_blank"
-                  class="project-tools"
-                  title="Open Weather API"
-                  >Open Weather API</a
-                >
-                to get the weather info. Also made use of
-                <b>Bootstrap</b> tools.
-            </p>
-            <a
+
+          <div class="card" style="width: 18rem;">
+            <img src="images/dictionary-image.png" class="card-img-top mb-0"  alt="dictionary project preview">
+            <div class="card-body">
+              <h3 class="card-title mt-3">Dictionary App</h3>
+              <p class="card-text">....................</p>
+              <div class="card-body">
+              <a
               href="https://starlit-clafoutis-f310c6.netlify.app"
               target="_blank"
               class="btn primary-button-style mb-3"
@@ -174,33 +149,11 @@
               class="btn primary-button-style"
               title="Launch Pottery project"
               >GitHub</a
-            >
-          </div>
-          <div class="col-md-4 d-block d-flex rounded">
-            <img
-              src="images/dictionary-image.png"
-              class="d-none d-md-block img-fluid rounded"
-              alt="dictionary project preview"
-            />
-            <h3>Dictionary App</h3>
-            <p>
-              Dictionary App with definitions, synonyms, translations, and audio function to provide the pronunciation of the results. Provided for 13 languages (including English, Spanish, French, Russian, Arabic, Korean, Japanese, etc ) with responsive view and looking good on the small screen.
-            </p>
-            <a
-              href="#"
-              class="btn primary-button-style mb-3"
-              title="Launch Dictionary project"
-              >Launch App</a
-            >
-             <a
-              href="#"
-              target="_blank"
-              class="btn primary-button-style"
-              title="Launch Pottery project"
-              >GitHub</a
-            >
+            ></div>
+            </div>
           </div>
         </div>
+         <img class="right" id="right" onclick="rightScroll()" width="64" height="64" src="https://img.icons8.com/sf-black-filled/64/8773F0/circled-left-2.png" alt="circled-right-2"/>
         </div>
       </section>
       <footer>
@@ -257,6 +210,7 @@
           >
         </p>
       </footer>
+      <script src="app.js"></script>
     </div>
   </body>
 </html>
